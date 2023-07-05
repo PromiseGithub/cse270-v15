@@ -86,7 +86,7 @@ hr{
 
 nav ul{
     position: absolute;
-    bottom: -250px;
+    bottom: -300px;
     left: -1px;
     display: none;
     flex-direction: column;    
@@ -118,6 +118,10 @@ nav ul li a.active{
 
 nav ul li a:hover{    
     background-color: var(--tan);
+}
+
+#admin-menu{
+    display: none;
 }
 
 /** Hamburger menu stuff **/
@@ -277,8 +281,7 @@ nav ul.menu-active{
 }
 
 .main-join{
-    grid-area: j;
-    display: none;
+    grid-area: j;    
 }
 
 .main-join p, .main-join h1{
@@ -323,6 +326,10 @@ nav ul.menu-active{
 
 .main-spotlight p{
     text-align: center;
+}
+
+.spotlight3{
+    display: none;
 }
 
 /** Discover page **/
@@ -545,10 +552,20 @@ nav ul.menu-active{
 }
 
 .admin-main section form div{
-    text-align: center;
+    text-align: center;    
 }
 
 .displaydata{
     display: none;
     text-align: center;
+}
+
+.admin-main{
+    display: none;
+}
+
+.admin-disabled{
+    font-size: 1.5rem;
+    color: maroon;        
+    text-align: center;   
 }

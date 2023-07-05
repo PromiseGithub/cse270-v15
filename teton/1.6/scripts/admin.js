@@ -40,4 +40,13 @@ function logout(){
     showhidelogin()    
 }
 
+function featureFlag(){
+    let admin_flag = localStorage.getItem("admin_flag")
+    if (admin_flag != null && admin_flag.toUpperCase() == 'ENABLED'){
+        document.querySelector(".admin-main").style.display = 'block'
+        document.querySelector(".admin-disabled").style.display = 'none'
+    }
+}
+
 showhidelogin()
+featureFlag()

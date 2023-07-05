@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./styles/large.css" />    
     <script src="./config/config.js" defer></script>
     <script src="./scripts/header-footer.js" defer></script>    
-    <script src="./scripts/admin.js" defer></script>    
+    <script src="./scripts/directory.js" defer></script>    
   </head>
   <body>
     <div id="content">
@@ -27,57 +27,45 @@
             <h2>Chamber of Commerce</h2>
           </div>
           <div class="header-icons">
-            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" alt="Instagram logo"></a>
-            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" alt="Facebook logo"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" alt="instagram logo"></a>
+            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" alt="facebook logo"></a>
           </div>
       </div>
       <nav>
         <button id="hamburger-menu">
-          <span id="hamburger-x"><img src="./images/hamburger-close.png" alt="Hamburger menu close"></span>
-          <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="Hamburger menu open"></span>
+          <span id="hamburger-x"><img src="./images/hamburger-close.png" alt="hamburger menu image"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="hamburger menu image"></span>
         </button>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="admin.html" class="active">Admin</a></li>
+          <li id="admin-menu"><a href="admin.html">Admin</a></li>
         </ul>
       </nav>
       <div class="header-today"><p></p></div>
     </header>
-    <main class="admin-main">
-      <section class="login">
-        <form>
-          <fieldset>
-            <legend>Enter Credentials</legend>
-            <label class="myinput">Username:<input id="username" name="username" type="text"></label>
-            <label class="myinput">Password:<input id="password" name="password" type="password"></label>
-            <input type="button" class="mysubmit" onclick="checkcredentials()" value="Login">
-          </fieldset>
-          <div><span class="errorMessage"></span></div>
-        </form>
-      </section>
-      <section class="displaydata">
-        <h1>Welcome <span id="displayusername"></span></h1>
-        <p>Administrator functions are still being worked on. Check back soon!</p>
-        <p><input type="button" value="Logout" class="mysubmit" onclick="logout()"></p>
-      </section>
+    <main class="directory-main">
+    <div id='directory-selector'>
+      <button id="directory-grid" class="active">GRID</button>
+      <button id="directory-list">LIST</button></div>
+    <div id='directory-data' class='directory-cards'>
+    </div>
     </main>
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="./images/teton-logo-150.webp" alt="Teton Chamber of Commerce Logo"/>
+          <img src="./images/teton-logo-150.webp" />
         </div>
         <div class="footer-contact">
           <h3>Teton Idaho Chamber of Commerce</h3>
           <p>123 Main Street<br />Teton, ID 83451</p>
           <p><a href="mailto:notavalidaddress@nowhere.email">info@tetonchamber.org</a></p>
           <p>208-458-4444</p>
-          <p>Weather Data courtesy of <a href="https://openweathermap.org/">OpenWeatherMap</a></p>
         </div>
         <div class="footer-map">
-          <p><img src="./images/google-maps.png" alt="Google Maps icon"></p>
+          <p><a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank"><img src="./images/google-maps.png" alt="Google maps icon"></a></p>
           <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
         </div>
       </div>
